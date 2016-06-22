@@ -34,7 +34,7 @@ html,
 body {
   height: 100%;
 }
-/* Body Triggers for layout options 
+/* Body Triggers for layout options
 ------------------------------------------------------------------
 */
 body.mobile {
@@ -72,7 +72,7 @@ body.pace-white .pace .pace-progress {
   text-align: initial;
   display: block;
 }
-/* Header 
+/* Header
 ------------------------------------
 */
 .header {
@@ -850,7 +850,7 @@ body.pace-white .pace .pace-progress {
 .menu-content[data-pages-direction="slideTop"] {
   top: 0;
 }
-/* Overlay Search 
+/* Overlay Search
 ------------------------------------
 */
 .overlay {
@@ -1661,7 +1661,7 @@ body {
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
 }
-/* Headings 
+/* Headings
 ------------------------------------
 */
 h1,
@@ -1849,7 +1849,7 @@ hr.double {
 hr.dotted {
   border-style: dotted none none;
 }
-/* Font Sizes 
+/* Font Sizes
 ------------------------------------
 */
 .small-text {
@@ -1878,7 +1878,7 @@ hr.dotted {
 .light {
   font-weight: 300 !important;
 }
-/* Misc 
+/* Misc
 ------------------------------------
 */
 .all-caps {
@@ -1941,7 +1941,7 @@ hr.dotted {
 .bg-primary-lighter {
   background-color: #e2deef;
 }
-/* Complete 
+/* Complete
 ------------------------------------
 */
 .bg-complete {
@@ -1959,7 +1959,7 @@ hr.dotted {
 .bg-complete-lighter {
   background-color: #daeffd;
 }
-/* Success 
+/* Success
 ------------------------------------
 */
 .bg-success {
@@ -1995,7 +1995,7 @@ hr.dotted {
 .bg-info-lighter {
   background-color: #d8dadc;
 }
-/* Danger 
+/* Danger
 ------------------------------------
 */
 .bg-danger {
@@ -2034,7 +2034,7 @@ hr.dotted {
 /* More Color Options
 ------------------------------------
 */
-/* Menu 
+/* Menu
 ------------------------------------
 */
 .bg-menu-dark {
@@ -3703,7 +3703,7 @@ Misc buttons
 .progress-striped .bar-info {
   background-color: #3b4752;
 }
-/* Circular Progress : indeterminate 
+/* Circular Progress : indeterminate
 ------------------------------------
 */
 .progress-circle-indeterminate {
@@ -3731,7 +3731,7 @@ Misc buttons
 .progress-circle-indeterminate.progress-circle-complete {
   background-image: url('../images/progress/progress-circle-complete.svg');
 }
-/* Circular Progress 
+/* Circular Progress
 ------------------------------------
 */
 .progress-circle {
@@ -4079,7 +4079,7 @@ Misc buttons
 .nav-tabs.nav-tabs-right ~ .tab-content {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* Tabs : Simple 
+/* Tabs : Simple
 ------------------------------------
 */
 .nav-tabs-simple {
@@ -4266,7 +4266,7 @@ Misc buttons
     font-size: 0.6em;
   }
 }
-/* Tabs : Fill-up 
+/* Tabs : Fill-up
 ------------------------------------
 */
 .nav-tabs-fillup {
@@ -4666,7 +4666,7 @@ fieldset[disabled] .form-control {
   font-size: 18px;
   line-height: 22px;
 }
-/* Checkboxes and Radio buttons 
+/* Checkboxes and Radio buttons
 --------------------------------------------------
 */
 .radio,
@@ -4941,7 +4941,7 @@ fieldset[disabled] .form-control {
     width: 100%;
   }
 }
-/* Form Groups 
+/* Form Groups
 --------------------------------------------------
 */
 .form-group {
@@ -5372,7 +5372,7 @@ input.error:-webkit-autofill:focus,
 /*------------------------------------------------------------------
 [14. Tables]
 */
-/* Generic Tables 
+/* Generic Tables
 ------------------------------------
 */
 .table.table-hover tbody tr:hover td {
@@ -5490,7 +5490,7 @@ input.error:-webkit-autofill:focus,
   height: 100%;
   width: 100%;
 }
-/* Feed 
+/* Feed
 ------------------------------------
 */
 .social-wrapper .social .feed {
@@ -5511,7 +5511,7 @@ input.error:-webkit-autofill:focus,
 .social-wrapper .social .feed > .day:hover > .timeline:after {
   background: #48b0f7;
 }
-/* Cards 
+/* Cards
 ------------------------------------
 */
 .card {
@@ -5904,7 +5904,7 @@ input.error:-webkit-autofill:focus,
   text-align: right;
   margin-right: 10px;
 }
-/* Thumbnail for icons and profile pics 
+/* Thumbnail for icons and profile pics
 ------------------------------------
 */
 .thumbnail-wrapper {
@@ -6045,14 +6045,14 @@ input.error:-webkit-autofill:focus,
   background: transparent;
   border: none;
 }
-/* Scroll 
+/* Scroll
 ------------------------------------
 */
 .scrollable {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-/* Overides 
+/* Overides
 ------------------------------------
 */
 .no-padding {
@@ -6148,7 +6148,7 @@ input.error:-webkit-autofill:focus,
 .scroll-x-hidden {
   overflow-x: hidden !important;
 }
-/* Generic Padding Helpers 
+/* Generic Padding Helpers
 ------------------------------------
 */
 .p-t-5 {
@@ -6727,7 +6727,7 @@ input.error:-webkit-autofill:focus,
 .b-blank {
   border-color: #000;
 }
-/* Border Helpers 
+/* Border Helpers
 ------------------------------------
 */
 .b-a,
@@ -7007,7 +7007,7 @@ input.error:-webkit-autofill:focus,
 .bg-position-center {
   background-position: top center;
 }
-/* columns of same height styles 
+/* columns of same height styles
 ------------------------------------
 */
 .container-xs-height {
@@ -8749,9 +8749,6 @@ sup.dollar {
     width: auto;
   }
 }
-img.raad-sig{
-	width: 250px;
-}
 .arrowbutton{
 	width: 45px;
 	height: 45px;
@@ -8760,14 +8757,7 @@ img.raad-sig{
 
 
 /*  Custom Edits */
-@media only screen and (max-width: 768px) {
-  .raad-sig-container{
-    text-align:center !important;
-  }
-}
-.font-mont{
-	font-family: 'Montserrat';
-}
+
 p.biography{
   font-size: 20px;
   line-height: 1.5em;
@@ -8777,6 +8767,18 @@ img.interests{
   width:50px;
   border-radius: 10px;
 }
-.contact p{
-  font-size:2px;
+
+img.project-pic{
+    width:50px;
+    border-radius: 10px;
+}
+
+.hover-border:hover{
+    padding:3px;
+}
+.hover-border{
+    transition: 0.1s;
+}
+#bad-project-image{
+    height:50px;
 }
