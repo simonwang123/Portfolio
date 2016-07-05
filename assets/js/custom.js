@@ -50,6 +50,38 @@
         //     curve: 'ease'
         // });
 
+        // Simon's custom JS
+
+
+        var str1 = "Hi, I'm Simon.";
+        var str2 = "Welcome to my website!";
+        var text = "";
+        var i = 0;
+        document.getElementById('typewriter').innerHTML = text;
+
+
+        function print1(){
+            var print1 = setInterval(function(){
+                text = str1.slice(0, ++i);
+                document.getElementById('typewriter').innerHTML = text;
+                if(text === str1)
+                    clearInterval(print1)
+                }, 50);
+        }
+
+
+        function print2(){
+            i = 0;
+            var print2 = setInterval(function(){
+            text = str2.slice(0,++i);
+            document.getElementById('typewriter').innerHTML = text; 
+            if(text === str2)
+                clearInterval(print2);
+          },50);
+        }
+        setTimeout(print1,50)
+        setTimeout(print2, 2000);
+
         $('.btn-arrow').click(function() {
             $("#launch").velocity("scroll", {
                 duration: 800
