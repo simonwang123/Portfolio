@@ -50,11 +50,9 @@
         //     curve: 'ease'
         // });
 
-        // Simon's custom JS
-
-
-        var str1 = "Hi, I'm Simon.";
-        var str2 = "Welcome to my website!";
+// ---------------------------------------- BEGIN SIMON CUSTOM JS ----------------------------------------
+        var str1 = "Hi, I'm Simon";
+        var str2 = "Welcome to my website";
         var text = "";
         var i = 0;
         document.getElementById('typewriter').innerHTML = text;
@@ -81,6 +79,7 @@
         }
         setTimeout(print1,50)
         setTimeout(print2, 2000);
+// ---------------------------------------- END SIMON CUSTOM JS ----------------------------------------
 
         $('.btn-arrow').click(function() {
             $("#launch").velocity("scroll", {
