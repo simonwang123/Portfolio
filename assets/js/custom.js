@@ -53,7 +53,7 @@
         // Simon's custom JS
 
 
-        var str1 = "Hi, I'm Simon!";
+        var str1 = "Hi, I'm Simon.";
         var str2 = "Welcome to my website!";
         var text = "";
         var i = 0;
