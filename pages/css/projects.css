@@ -33,6 +33,26 @@ Generated From LESS
 
 /*  Custom Edits */
 
+#typewriter{
+  display:inline;
+}
+
+.blink-me{
+  display: inline-block;
+  background-color: #d0d0d0;
+  font-size:44px;
+  font-family: 'Open Sans', sans-serif;
+  width: 5px;
+}
+
+.appear.disappear{
+  opacity: 0;
+}
+
+.appear{
+  opacity: 1;
+}
+
 p.biography{
   font-size: 20px;
   line-height: 1.5em;
@@ -65,9 +85,6 @@ img.project-pic{
   padding: 2px;
 }
 
-.typewriter-heading{
-
-}
 
 html,
 body {

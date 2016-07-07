@@ -56,8 +56,12 @@
         var text = "";
         var i = 0;
         var message = "first";
+        var hidden = false;
         document.getElementById('typewriter').innerHTML = text;
-
+        function blink() {
+            $('.blink-me').toggleClass("disappear");
+        };
+        setInterval(blink,600);
 
         function print(){
             if (message === "first"){
@@ -73,7 +77,7 @@
             }
             if (message === "second"){
                 var print2 = setInterval(function() {
-                    text = str1.slice(0, i--);
+                    text = str1.slice(0, i--) ;
                     document.getElementById('typewriter').innerHTML = text;
                     if (text === "") {
                         clearInterval(print2);
@@ -86,7 +90,7 @@
                 var print3 = setInterval(function() {
                     text = str2.slice(0, ++i);
                     document.getElementById('typewriter').innerHTML = text;
-                    if (text === str2) {
+                    if (text === str2 + "") {
                         clearInterval(print3);
                         message = "fourth";
                         setTimeout(print,10000);
