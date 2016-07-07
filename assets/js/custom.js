@@ -51,17 +51,20 @@
         // });
 
 // ---------------------------------------- BEGIN SIMON CUSTOM JS ----------------------------------------
+        // BLINKING CURSOR EFFECT
+        function blink() {
+            $('.blink-me').toggleClass("disappear");
+        };
+
+        setInterval(blink,600);
+
+        // TYPEWRITER EFFECT
         var str1 = "Hi, I'm Simon.";
         var str2 = "Welcome to my website!";
         var text = "";
         var i = 0;
         var message = "first";
-        var hidden = false;
         document.getElementById('typewriter').innerHTML = text;
-        function blink() {
-            $('.blink-me').toggleClass("disappear");
-        };
-        setInterval(blink,600);
 
         function print(){
             if (message === "first"){
@@ -193,6 +196,6 @@
         offset: '60%'
     })
     }
-   
+
 
 }.call(this));
