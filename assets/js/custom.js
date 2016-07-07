@@ -51,41 +51,123 @@
         // });
 
 // ---------------------------------------- BEGIN SIMON CUSTOM JS ----------------------------------------
-        var str1 = "Hi, I'm Simon";
-        var str2 = "Welcome To My Website";
+        var str1 = "Hi, I'm Simon.";
+        var str2 = "Welcome to my website!";
         var text = "";
         var i = 0;
+        var message = "first";
         document.getElementById('typewriter').innerHTML = text;
 
 
-        function print1(){
-            var print1 = setInterval(function(){
-                text = str1.slice(0, ++i);
-                document.getElementById('typewriter').innerHTML = text;
-                if(text === str1)
-                    clearInterval(print1)
-                }, 50);
+        function print(){
+            if (message === "first"){
+                var print1 = setInterval(function() {
+                    text = str1.slice(0, i++);
+                    document.getElementById('typewriter').innerHTML = text;
+                    if (text === str1) {
+                        clearInterval(print1);
+                        message = "second";
+                        setTimeout(print,2000);
+                    }
+                }, 60)
+            }
+            if (message === "second"){
+                var print2 = setInterval(function() {
+                    text = str1.slice(0, i--);
+                    document.getElementById('typewriter').innerHTML = text;
+                    if (text === "") {
+                        clearInterval(print2);
+                        message = "third";
+                        print();
+                    }
+                }, 60)
+            }
+            if (message === "third"){
+                var print3 = setInterval(function() {
+                    text = str2.slice(0, ++i);
+                    document.getElementById('typewriter').innerHTML = text;
+                    if (text === str2) {
+                        clearInterval(print3);
+                        message = "fourth";
+                        setTimeout(print,10000);
+                    }
+                }, 60)
+            }
+            if (message === "fourth"){
+                var print4 = setInterval(function() {
+                    text = str2.slice(0, --i);
+                    document.getElementById('typewriter').innerHTML = text;
+                    if (text === "") {
+                        clearInterval(print4);
+                        message = "first";
+                        print();
+                    }
+                }, 60)
+            }
         }
+        setTimeout(print,50)
+        // function print1(){
+        //     i = 0;
+        //     var print1 = setInterval(function(){
+        //     text = str1.slice(0,++i);
+        //     document.getElementById('typewriter').innerHTML = text;
+        //     if(text === str1)
+        //         clearInterval(print1);
+        //   },50);
+        // }
+        // function print2(){
+        //     i = 0;
+        //     var print2 = setInterval(function(){
+        //     text = str2.slice(0,++i);
+        //     document.getElementById('typewriter').innerHTML = text;
+        //     if(text === str2)
+        //         clearInterval(print2);
+        //   },50);
+        // }
+        // setTimeout(print1,50)
+        // setTimeout(print2, 2000);
 
-
-        function print2(){
-            i = 0;
-            var print2 = setInterval(function(){
-            text = str2.slice(0,++i);
-            document.getElementById('typewriter').innerHTML = text; 
-            if(text === str2)
-                clearInterval(print2);
-          },50);
-        }
-        setTimeout(print1,50)
-        setTimeout(print2, 2000);
-// ---------------------------------------- END SIMON CUSTOM JS ----------------------------------------
-
-        $('.btn-arrow').click(function() {
-            $("#launch").velocity("scroll", {
+        // SCROLLING EFFECT
+        $('.anchor-home').click(function() {
+            $("#home").velocity("scroll", {
                 duration: 800
             });
-        })
+        });
+
+        $('.anchor-biography').click(function() {
+            $("#biography").velocity("scroll", {
+                duration: 800
+            });
+        });
+
+
+        $('.anchor-interests').click(function() {
+            $("#interests").velocity("scroll", {
+                duration: 800
+            });
+        });
+
+        $('.anchor-projects').click(function() {
+            $("#projects").velocity("scroll", {
+                duration: 800
+            });
+        });
+
+        $('.anchor-work').click(function() {
+            $("#work-experience").velocity("scroll", {
+                duration: 800
+            });
+        });
+
+        $('.anchor-contact').click(function() {
+            $("#contact").velocity("scroll", {
+                duration: 800
+            });
+        });
+// ---------------------------------------- END SIMON CUSTOM JS ----------------------------------------
+
+
+
 
 
         window.signature.initialize();
