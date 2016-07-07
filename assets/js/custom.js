@@ -74,7 +74,7 @@
                     if (text === str1) {
                         clearInterval(print1);
                         message = "second";
-                        setTimeout(print,2000);
+                        setTimeout(print,2200);
                     }
                 }, 60)
             }
@@ -112,7 +112,7 @@
                 }, 60)
             }
         }
-        setTimeout(print,50)
+        setTimeout(print,100)
         // function print1(){
         //     i = 0;
         //     var print1 = setInterval(function(){
