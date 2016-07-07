@@ -135,38 +135,38 @@
         // setTimeout(print2, 2000);
 
         // SCROLLING EFFECT
-        $('.anchor-home').click(function() {
+        $('.anchor-home').click(function(event) {
             $("#home").velocity("scroll", {
                 duration: 800
             });
         });
 
-        $('.anchor-biography').click(function() {
+        $('.anchor-biography').click(function(event) {
             $("#biography").velocity("scroll", {
                 duration: 800
             });
         });
 
 
-        $('.anchor-interests').click(function() {
+        $('.anchor-interests').click(function(event) {
             $("#interests").velocity("scroll", {
                 duration: 800
             });
         });
 
-        $('.anchor-projects').click(function() {
-            $("#projects").velocity("scroll", {
+        $('.anchor-projects').click(function(event) {
+            $("#personal-projects").velocity("scroll", {
                 duration: 800
             });
         });
 
-        $('.anchor-work').click(function() {
-            $("#work-experience").velocity("scroll", {
+        $('.anchor-work').click(function(event) {
+            $("#work").velocity("scroll", {
                 duration: 800
             });
         });
 
-        $('.anchor-contact').click(function() {
+        $('.anchor-contact').click(function(event) {
             $("#contact").velocity("scroll", {
                 duration: 800
             });
