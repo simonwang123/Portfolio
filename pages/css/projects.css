@@ -34,6 +34,7 @@ Generated From LESS
 
 /*  Custom Edits */
 img.profile-pic {
+    border: solid #f0f0f0 3px;
     width: 80%; 
     border-radius: 100%;
 }
@@ -63,7 +64,7 @@ p.biography{
   line-height: 1.5em;
 }
 
-img.project-pic{
+img.project-pic {
   width:50px;
   border-radius: 10px;
 }
@@ -92,6 +93,7 @@ img.project-pic{
 
 @media only screen and (max-width:736px) {
   img.profile-pic {
+    border: solid #f0f0f0 3px;
     width: 65%;
     border-radius: 5px;
   }
