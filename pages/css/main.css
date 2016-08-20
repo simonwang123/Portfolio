@@ -6714,6 +6714,11 @@ button.close {
 
 /* START CUSTOM EDITS*/
 
+img.profile-pic {
+    width: 80%; 
+    border-radius: 100%;
+}
+
 #typewriter {
   display: inline;
 }
@@ -6765,6 +6770,7 @@ img.project-pic {
   opacity: .9;
   padding: 2px;
 }
+
 
 /* END CUSTOM EDITS*/
 

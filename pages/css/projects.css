@@ -33,6 +33,10 @@ Generated From LESS
 
 
 /*  Custom Edits */
+img.profile-pic {
+    width: 80%; 
+    border-radius: 100%;
+}
 
 #typewriter{
   display:inline;
@@ -86,6 +90,13 @@ img.project-pic{
   padding: 2px;
 }
 
+@media only screen and (max-width:736px) {
+  img.profile-pic {
+    width: 65%;
+    border-radius: 5px;
+  }
+}
+/*  End Custom Edits */
 
 html,
 body {
