@@ -35,7 +35,7 @@ Generated From LESS
 /*  Custom Edits */
 img.profile-pic {
     border: solid #f0f0f0 3px;
-    width: 80%; 
+    width: 85%; 
     border-radius: 100%;
 }
 
@@ -96,6 +96,15 @@ img.project-pic {
     border: solid #f0f0f0 3px;
     width: 65%;
     border-radius: 5px;
+  }
+
+  .col-md-8 p.biography {
+    color: #626262;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
   }
 }
 
