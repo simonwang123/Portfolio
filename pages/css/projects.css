@@ -91,10 +91,26 @@ img.project-pic {
   padding: 2px;
 }
 
-@media only screen and (max-width:736px) {
+@media only screen and (max-width:991px) {
   img.profile-pic {
     border: solid #f0f0f0 3px;
     width: 65%;
+    border-radius: 5px;
+  }
+}
+
+@media print {
+  #home {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  img.profile-pic {
+    border: solid #f0f0f0 3px;
+    width: 50%;
     border-radius: 5px;
   }
 }
