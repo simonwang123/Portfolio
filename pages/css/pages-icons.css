@@ -355,62 +355,6 @@ Generated From LESS
 [1. Layouts]
 */
 
-
-/*  Custom Edits */
-
-#typewriter{
-	display:inline;
-}
-
-.blink-me{
-	display: inline-block;
-	background-color: #d0d0d0;
-	font-size:44px;
-	font-family: 'Open Sans', sans-serif;
-	width: 5px;
-}
-
-.appear.disappear{
-	opacity: 0;
-}
-
-.appear{
-	opacity: 1;
-}
-
-p.biography{
-	font-size: 20px;
-	line-height: 1.5em;
-}
-
-img.project-pic{
-	width:50px;
-	border-radius: 10px;
-}
-
-.hover-border:hover{
-	padding:3px;
-}
-
-.hover-border{
-	transition: 0.1s;
-}
-
-#bad-project-image{
-	height:50px;
-}
-
-.arrow-button{
-	width: 45px;
-	height: 45px;
-}
-
-.arrow-button:hover{
-	opacity: 0.9;
-	padding: 2px;
-}
-
-
 html,
 body {
 	height: 100%;

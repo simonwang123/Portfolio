@@ -69,11 +69,12 @@ img.project-pic {
   border-radius: 10px;
 }
 
-.hover-border:hover{
-  padding:3px;
+.work-pic:hover{
+  padding:10px;
 }
 
-.hover-border{
+.work-pic{
+  height: 100px;
   transition: 0.1s;
 }
 
@@ -89,6 +90,17 @@ img.project-pic {
 .arrow-button:hover{
   opacity: 0.9;
   padding: 2px;
+}
+
+.project-pic:hover{
+  /*padding:3px;*/
+  animation: bounce 0.85s infinite;
+}
+
+@keyframes bounce {
+    0%   {transform: translateY(0);}
+    50%   {transform: translateY(-15px);}
+    100%   {transform: translateY(0);}
 }
 
 @media only screen and (max-width:991px) {
