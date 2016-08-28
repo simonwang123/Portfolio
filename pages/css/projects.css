@@ -114,7 +114,7 @@ img.project-pic {
 }
 
 #home.atf {
-  animation: fade 4s forwards;
+  animation: fade 2.4s forwards;
 }
 
 @keyframes fade {
