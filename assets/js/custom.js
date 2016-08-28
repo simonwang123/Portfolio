@@ -117,7 +117,7 @@
         // PRELOAD
         $(window).load(function() {
             $("body").removeClass("preload");
-            setTimeout(print,1600);
+            print()
         });
 
         // SCROLLING EFFECT
