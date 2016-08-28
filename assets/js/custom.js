@@ -51,6 +51,7 @@
         // });
 
 // ---------------------------------------- BEGIN SIMON CUSTOM JS ----------------------------------------
+       
         // BLINKING CURSOR EFFECT
         function blink() {
             $('.blink-me').toggleClass("disappear");
@@ -76,7 +77,7 @@
                         message = "second";
                         setTimeout(print,2200);
                     }
-                }, 60)
+                }, 65)
             }
             if (message === "second"){
                 var print2 = setInterval(function() {
@@ -87,7 +88,7 @@
                         message = "third";
                         print();
                     }
-                }, 60)
+                }, 65)
             }
             if (message === "third"){
                 var print3 = setInterval(function() {
@@ -98,7 +99,7 @@
                         message = "fourth";
                         setTimeout(print,10000);
                     }
-                }, 60)
+                }, 65)
             }
             if (message === "fourth"){
                 var print4 = setInterval(function() {
@@ -109,7 +110,7 @@
                         message = "first";
                         print();
                     }
-                }, 60)
+                }, 65)
             }
         };
 
