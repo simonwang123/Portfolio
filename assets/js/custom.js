@@ -111,28 +111,14 @@
                     }
                 }, 60)
             }
-        }
-        setTimeout(print,100)
-        // function print1(){
-        //     i = 0;
-        //     var print1 = setInterval(function(){
-        //     text = str1.slice(0,++i);
-        //     document.getElementById('typewriter').innerHTML = text;
-        //     if(text === str1)
-        //         clearInterval(print1);
-        //   },50);
-        // }
-        // function print2(){
-        //     i = 0;
-        //     var print2 = setInterval(function(){
-        //     text = str2.slice(0,++i);
-        //     document.getElementById('typewriter').innerHTML = text;
-        //     if(text === str2)
-        //         clearInterval(print2);
-        //   },50);
-        // }
-        // setTimeout(print1,50)
-        // setTimeout(print2, 2000);
+        };
+
+        // PRELOAD
+        $(window).load(function() {
+            $("body").removeClass("preload");
+            $("#home").addClass("atf");
+            setTimeout(print,2000);
+        });
 
         // SCROLLING EFFECT
         $('.anchor-home').click(function(event) {

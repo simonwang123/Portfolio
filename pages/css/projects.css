@@ -33,6 +33,10 @@ Generated From LESS
 
 
 /*  Custom Edits */
+.preload {
+  opacity: 0;
+}
+
 img.profile-pic {
     border: solid #f0f0f0 3px;
     width: 85%; 
@@ -106,13 +110,16 @@ img.project-pic {
 }
 
 #home {
-  animation: slide 1.2s forwards;
   opacity: 0;
 }
 
-@keyframes slide {
-  0% {transform: translateX(-1000px);}
-  100% {transform: translateX(0); opacity: 1;}
+#home.atf {
+  animation: fade 4s forwards;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 @media only screen and (max-width:991px) {
