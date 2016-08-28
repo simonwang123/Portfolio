@@ -109,6 +109,15 @@ img.project-pic {
     100%   {transform: translateY(0);}
 }
 
+#home {
+  animation: slide 1.6s forwards;
+}
+
+@keyframes slide {
+    0%   {bottom: -100%;}
+    100%   {bottom: 0%;}
+}
+
 @media only screen and (max-width:991px) {
   img.profile-pic {
     border: solid #f0f0f0 3px;

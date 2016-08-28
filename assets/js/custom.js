@@ -77,7 +77,7 @@
                         message = "second";
                         setTimeout(print,2200);
                     }
-                }, 65)
+                }, 60)
             }
             if (message === "second"){
                 var print2 = setInterval(function() {
@@ -88,7 +88,7 @@
                         message = "third";
                         print();
                     }
-                }, 65)
+                }, 60)
             }
             if (message === "third"){
                 var print3 = setInterval(function() {
@@ -99,7 +99,7 @@
                         message = "fourth";
                         setTimeout(print,10000);
                     }
-                }, 65)
+                }, 60)
             }
             if (message === "fourth"){
                 var print4 = setInterval(function() {
@@ -110,14 +110,14 @@
                         message = "first";
                         print();
                     }
-                }, 65)
+                }, 60)
             }
         };
 
         // PRELOAD
         $(window).load(function() {
             $("body").removeClass("preload");
-            setTimeout(print,100);
+            setTimeout(print,1600);
         });
 
         // SCROLLING EFFECT
