@@ -109,19 +109,6 @@ img.project-pic {
     100%   {transform: translateY(0);}
 }
 
-#home {
-  opacity: 0;
-}
-
-#home.atf {
-  animation: fade 1.2s forwards;
-}
-
-@keyframes fade {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 @media only screen and (max-width:991px) {
   img.profile-pic {
     border: solid #f0f0f0 3px;
