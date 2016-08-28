@@ -118,7 +118,7 @@
         $(window).load(function() {
             $("body").removeClass("preload");
             $("#home").addClass("atf");
-            setTimeout(print,800);
+            setTimeout(print,1200);
         });
 
         // SCROLLING EFFECT
