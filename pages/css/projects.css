@@ -76,6 +76,7 @@ img.project-pic {
 .work-pic{
   height: 100px;
   transition: 0.4s;
+  transition-delay: 0.05s;
 }
 
 #bad-project-image{
@@ -95,12 +96,23 @@ img.project-pic {
 .project-pic:hover{
   /*padding:3px;*/
   animation: bounce 0.85s infinite;
+  animation-delay: 0.1s;
 }
 
 @keyframes bounce {
     0%   {transform: translateY(0);}
     50%   {transform: translateY(-15px);}
     100%   {transform: translateY(0);}
+}
+
+#home {
+  animation: slide 1.2s forwards;
+  opacity: 0;
+}
+
+@keyframes slide {
+  0% {transform: translateX(-1000px);}
+  100% {transform: translateX(0); opacity: 1;}
 }
 
 @media only screen and (max-width:991px) {
